@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8319934954833576376}
   - component: {fileID: 8319934954833576352}
   - component: {fileID: 8319934954833576357}
+  - component: {fileID: 2850149488505846754}
   m_Layer: 0
   m_Name: scientist
   m_TagString: Untagged
@@ -136,3 +137,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombie: {fileID: 3455413221066226007, guid: 340e654b468b97340927a81779cbe85d, type: 3}
+--- !u!114 &2850149488505846754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8319934954833576356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adf9d07b91e82e48979ae85e63eab9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementspeed: 15
+  turnspeed: 0
+  rigidbody: {fileID: 8319934954833576376}
+  target: {fileID: 0}
+  targetPosition: {x: 0, y: 0}
+  moveDirection: {x: 0, y: 0}
+  directionVector: {x: 1, y: 1}
+  snappingnumber: 0
