@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1714.2858
     height: 1060.5715
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 471}
   m_MaxSize: {x: 10000, y: 10000}
@@ -115,10 +115,10 @@ MonoBehaviour:
     y: 30
     width: 1714
     height: 1011
-  m_MinSize: {x: 908, y: 421}
-  m_MaxSize: {x: 22003, y: 10021}
+  m_MinSize: {x: 911, y: 421}
+  m_MaxSize: {x: 22006, y: 10021}
   vertical: 1
-  controlID: 8262
+  controlID: 1274
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,10 +142,10 @@ MonoBehaviour:
     y: 0
     width: 1714
     height: 1011
-  m_MinSize: {x: 908, y: 421}
-  m_MaxSize: {x: 22003, y: 10021}
+  m_MinSize: {x: 911, y: 421}
+  m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 8263
+  controlID: 1275
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 421}
   m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 8222
+  controlID: 1249
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -374,17 +374,17 @@ MonoBehaviour:
       y: 21
       width: 973.8571
       height: 571.2857
-    m_Scale: {x: 1.7393531, y: 1.7393527}
-    m_Translation: {x: 390.8886, y: 304.2304}
+    m_Scale: {x: 1.7393527, y: 1.7393527}
+    m_Translation: {x: 390.88864, y: 304.23038}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -224.73218
-      y: -174.91013
-      width: 559.8962
+      x: -224.73225
+      y: -174.91011
+      width: 559.8963
       height: 328.4473
     m_MinimalGUI: 1
   m_defaultScale: 0.8876301
@@ -430,9 +430,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.8911824, y: -5.654548, z: -2.7628095}
+    m_Target: {x: 9.989135, y: 1.495242, z: -4.6729007}
     speed: 2
-    m_Value: {x: -5.8911824, y: -5.654548, z: -2.7628095}
+    m_Value: {x: 10.884369, y: 0.97908044, z: -4.5437045}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -483,9 +483,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.901305
+    m_Target: 30.002209
     speed: 2
-    m_Value: 10.901305
+    m_Value: 28.710247
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -588,9 +588,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2499ffff
-      m_LastClickedID: -26332
-      m_ExpandedIDs: 2899ffff5499ffff8a99ffff089affff48c1ffff5af6ffff74f6ffff76f6ffffacf6ffffa0faffffbafaffffbcfaffff
+      m_SelectedIDs: 44500000
+      m_LastClickedID: 20548
+      m_ExpandedIDs: 28fbffff54fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -652,22 +652,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\maria\Documents\Test2\IndieGamesGruppe4\ZombieEvolution
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c510000
-    m_LastClickedID: 20860
-    m_ExpandedIDs: 000000007651000000ca9a3b
+    m_SelectedIDs: 00510000
+    m_LastClickedID: 20736
+    m_ExpandedIDs: 00000000f250000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -695,7 +695,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007651000000ca9a3b
+    m_ExpandedIDs: 00000000f250000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

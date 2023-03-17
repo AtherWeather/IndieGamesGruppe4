@@ -22,11 +22,14 @@ public class NPCManager : MonoBehaviour
             {
                 if (child.gameObject.CompareTag("Zombie"))
                 {
-                    playerController.zombies.Add(child.gameObject);
-                }
-                if (child.gameObject.CompareTag("Dead"))
-                {
-                    playerController.zombies.Remove(child.gameObject);
+                    if(child.GetComponentInChildren<Zombie>().dead)
+                    {
+                        playerController.zombies.Remove(child.gameObject);
+                        Destroy(child.gameObject);
+                    } else
+                    {
+                        playerController.zombies.Add(child.gameObject);
+                    }
                 }
             }            
         }
