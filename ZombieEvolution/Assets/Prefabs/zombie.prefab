@@ -126,6 +126,7 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0}
   directionVector: {x: 0, y: 0}
   snappingnumber: 0
+  deadzombie: {fileID: 4442484809199634388, guid: aa1fbd9295dc91142a06a9e63b9bfd13, type: 3}
 --- !u!61 &654501056928566148
 BoxCollider2D:
   m_ObjectHideFlags: 0

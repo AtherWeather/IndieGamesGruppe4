@@ -13,6 +13,8 @@ public class Zombie : MonoBehaviour
     private bool targetreached;
     public float snappingnumber;
 
+    public GameObject deadzombie;
+
     void Start()
     {
         targetreached = true;
@@ -59,5 +61,12 @@ public class Zombie : MonoBehaviour
     {
         target = newTarget;
         targetreached = false;
+    }
+
+    public void getKilled()
+    {
+        GameObject temp = Instantiate(deadzombie, this.transform);
+        temp.transform.SetParent(gameObject.transform.parent);
+        Destroy(gameObject);
     }
 }

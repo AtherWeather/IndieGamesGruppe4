@@ -17,10 +17,18 @@ public class NPCManager : MonoBehaviour
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            if (transform.GetChild(i).gameObject.CompareTag("Zombie"))
+            Transform child = transform.GetChild(i);
+            if (child != null)
             {
-                playerController.zombies.Add(transform.GetChild(i).gameObject);
-            }
+                if (child.gameObject.CompareTag("Zombie"))
+                {
+                    playerController.zombies.Add(child.gameObject);
+                }
+                if (child.gameObject.CompareTag("Dead"))
+                {
+                    playerController.zombies.Remove(child.gameObject);
+                }
+            }            
         }
     }
 }

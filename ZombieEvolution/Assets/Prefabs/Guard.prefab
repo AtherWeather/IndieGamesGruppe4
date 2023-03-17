@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5490296744128171798}
   - component: {fileID: 8267198942483301849}
+  - component: {fileID: 8383209395509217040}
   m_Layer: 0
   m_Name: FieldOfView
   m_TagString: Untagged
@@ -38,7 +39,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8987624068256475141}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -59,6 +60,18 @@ PolygonCollider2D:
     - - {x: 9, y: 16}
       - {x: -9, y: 16}
       - {x: 0, y: 0}
+--- !u!114 &8383209395509217040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8987624068256475141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c676278bbaa25a447a7f59eb6f74f5c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9218095223892741759
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,6 +209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombie: {fileID: 3455413221066226007, guid: 340e654b468b97340927a81779cbe85d, type: 3}
-  bullet: {fileID: 0}
+  bullet: {fileID: 4289615758708018099, guid: e1c0233350fe5164e8558fe7ce779570, type: 3}
   aiming: 0
   target: {fileID: 0}
