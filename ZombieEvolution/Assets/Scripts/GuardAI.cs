@@ -8,6 +8,8 @@ public class GuardAI : MonoBehaviour
     public GameObject bullet;
     public Rigidbody2D rigidbody;
 
+    public GameObject gunbarrel;
+
     public bool aiming;
 
     public GameObject target;
@@ -39,7 +41,8 @@ public class GuardAI : MonoBehaviour
         if(currentcooldown <= 0)
             {
                 currentcooldown = guncooldown;
-                Instantiate(bullet, this.transform);
+                GameObject temp = Instantiate(bullet, gunbarrel.transform);
+                temp.transform.SetParent(gameObject.transform.parent);
             }
             else
             {
@@ -69,6 +72,7 @@ public class GuardAI : MonoBehaviour
     public void aim(GameObject targetnew)
     {
         target = targetnew;
+        aiming = true;
     }
 
 

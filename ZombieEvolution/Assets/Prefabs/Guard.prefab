@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1525227609991390932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8229687937811214708}
+  m_Layer: 0
+  m_Name: GunBarrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8229687937811214708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525227609991390932}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.03, y: 2.29, z: -0.83030707}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9218095223892741757}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8987624068256475141
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +41,7 @@ GameObject:
   - component: {fileID: 5490296744128171798}
   - component: {fileID: 8267198942483301849}
   - component: {fileID: 8383209395509217040}
+  - component: {fileID: 1295423429743957025}
   m_Layer: 0
   m_Name: FieldOfView
   m_TagString: Untagged
@@ -72,6 +103,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c676278bbaa25a447a7f59eb6f74f5c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &1295423429743957025
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8987624068256475141}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &9218095223892741759
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,10 +152,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9218095223892741759}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.4, y: -56.4, z: 108.99327}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5490296744128171798}
+  - {fileID: 8229687937811214708}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -211,6 +264,7 @@ MonoBehaviour:
   zombie: {fileID: 3455413221066226007, guid: 340e654b468b97340927a81779cbe85d, type: 3}
   bullet: {fileID: 4289615758708018099, guid: e1c0233350fe5164e8558fe7ce779570, type: 3}
   rigidbody: {fileID: 9218095223892741731}
+  gunbarrel: {fileID: 1525227609991390932}
   aiming: 0
   target: {fileID: 0}
   directionVector: {x: 0, y: 0}
