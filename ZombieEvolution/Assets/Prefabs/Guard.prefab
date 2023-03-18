@@ -210,5 +210,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombie: {fileID: 3455413221066226007, guid: 340e654b468b97340927a81779cbe85d, type: 3}
   bullet: {fileID: 4289615758708018099, guid: e1c0233350fe5164e8558fe7ce779570, type: 3}
+  rigidbody: {fileID: 9218095223892741731}
   aiming: 0
   target: {fileID: 0}
+  directionVector: {x: 0, y: 0}
+  guncooldown: 0
+  currentcooldown: 0

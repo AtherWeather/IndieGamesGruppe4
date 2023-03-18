@@ -34,12 +34,12 @@ public class Zombie : MonoBehaviour
         if (!targetreached)
         {
             Move();
-            if (directionVector.magnitude  < snappingnumber)
+            if (directionVector.magnitude < snappingnumber)
             {
-                targetreached = true;                
+                targetreached = true;
                 rigidbody.velocity = new Vector2(0, 0);
             }
-            
+
 
         }
     }
