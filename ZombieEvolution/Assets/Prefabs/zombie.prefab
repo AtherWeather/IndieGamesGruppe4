@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3455413221066225995}
   - component: {fileID: 3455413221066225994}
   - component: {fileID: 654501056928566148}
+  - component: {fileID: 3978191242556325322}
   m_Layer: 0
   m_Name: zombie
   m_TagString: Zombie
@@ -127,8 +128,35 @@ MonoBehaviour:
   directionVector: {x: 0, y: 0}
   snappingnumber: 0
   deadzombie: {fileID: 4442484809199634388, guid: aa1fbd9295dc91142a06a9e63b9bfd13, type: 3}
+  dead: 0
 --- !u!61 &654501056928566148
 BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3455413221066226007}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.104937315, y: -0.38477254}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 4.99}
+    newSize: {x: 8.31, y: 7.81}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.4813294, y: 4.6218266}
+  m_EdgeRadius: 0
+--- !u!58 &3978191242556325322
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -141,15 +169,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 4.99}
-    newSize: {x: 8.31, y: 7.81}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.72, y: 7.7}
-  m_EdgeRadius: 0
+  m_Radius: 3.49
