@@ -5,6 +5,8 @@ using UnityEngine;
 public class scientistAI : MonoBehaviour
 {
     public GameObject zombie;
+    public GameObject playercontroller;
+    public bool infected;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -16,9 +18,13 @@ public class scientistAI : MonoBehaviour
 
     private void infect()
     {
-        GameObject temp = Instantiate(zombie, this.transform);
-        temp.transform.SetParent(gameObject.transform.parent);
-        Destroy(gameObject);
+        if (!infected)
+        {
+            GameObject temp = Instantiate(zombie, this.transform);
+            temp.transform.SetParent(gameObject.transform.parent);
+            playercontroller.GetComponent<PlayerController>().addZombie(temp);
+            Destroy(gameObject);
+        }
     }
 
 }

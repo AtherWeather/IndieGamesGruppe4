@@ -7,6 +7,8 @@ public class GuardAI : MonoBehaviour
     public GameObject zombie;
     public GameObject bullet;
     public Rigidbody2D rigidbody;
+    public GameObject playercontroller;
+    
 
     public GameObject gunbarrel;
 
@@ -17,6 +19,7 @@ public class GuardAI : MonoBehaviour
 
     public float guncooldown;
     public float currentcooldown;
+    public bool infected;
 
     void Start()
     {
@@ -28,7 +31,14 @@ public class GuardAI : MonoBehaviour
     {
         if (aiming)
         {
-            directionVector = new Vector2(target.transform.position.x - rigidbody.position.x, target.transform.position.y - rigidbody.position.y);
+            if (target == null)
+            {
+                aiming = false;
+            }
+            else
+            {
+                directionVector = new Vector2(target.transform.position.x - rigidbody.position.x, target.transform.position.y - rigidbody.position.y);
+            }
         }
     }
 
@@ -63,10 +73,14 @@ public class GuardAI : MonoBehaviour
     }
 
     private void infect()
-    {     
+    {
+        if (!infected) { 
+        infected = true;
         GameObject temp = Instantiate(zombie, this.transform);
         temp.transform.SetParent(gameObject.transform.parent);
+        playercontroller.GetComponent<PlayerController>().addZombie(temp);
         Destroy(gameObject);
+    }
     }
 
     public void aim(GameObject targetnew)

@@ -32,7 +32,10 @@ public class PlayerController : MonoBehaviour
             energy -= attackOrderCost;      
             for (int i = 0; i < zombies.Count; i++)
             {
-                zombies[i].GetComponent<Zombie>().setTarget(mousePosition);
+                if (zombies[i] != null)
+                {
+                    zombies[i].GetComponent<Zombie>().setTarget(mousePosition);
+                }
             }
 
         }
@@ -44,5 +47,10 @@ public class PlayerController : MonoBehaviour
         target = sceneCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y , sceneCamera.transform.position.z));
         attackorder.transform.position = new Vector2(target.x, target.y);
         mousePosition = new Vector2(target.x, target.y);
+    }
+
+    public void addZombie(GameObject newZombey)
+    {
+        zombies.Add(newZombey);
     }
 }

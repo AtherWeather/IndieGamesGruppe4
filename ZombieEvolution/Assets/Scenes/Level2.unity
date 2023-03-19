@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &48569178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3455413221066226007, guid: 340e654b468b97340927a81779cbe85d, type: 3}
+  m_PrefabInstance: {fileID: 1439198530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &356283726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -457,6 +462,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3240628649343135493, guid: a55c18a6be1c194438373a1e504fa929, type: 3}
+      propertyPath: playercontroller
+      value: 
+      objectReference: {fileID: 1748028119}
     - target: {fileID: 8229687937811214708, guid: a55c18a6be1c194438373a1e504fa929, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.3
@@ -606,6 +615,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1005147633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3455413221066226007, guid: 340e654b468b97340927a81779cbe85d, type: 3}
+  m_PrefabInstance: {fileID: 619861800}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1147736625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -844,6 +858,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3240628649343135493, guid: a55c18a6be1c194438373a1e504fa929, type: 3}
+      propertyPath: playercontroller
+      value: 
+      objectReference: {fileID: 1748028119}
     - target: {fileID: 8229687937811214708, guid: a55c18a6be1c194438373a1e504fa929, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.3
@@ -910,6 +928,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55c18a6be1c194438373a1e504fa929, type: 3}
+--- !u!1 &1517184947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3455413221066226007, guid: 340e654b468b97340927a81779cbe85d, type: 3}
+  m_PrefabInstance: {fileID: 1147736625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1717322427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1860957222183523929, guid: 51fde5b1438faac43930c57cc15a1f36, type: 3}
@@ -946,6 +969,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombies:
   - {fileID: 1303418381}
+  - {fileID: 1005147633}
+  - {fileID: 48569178}
+  - {fileID: 1517184947}
   sceneCamera: {fileID: 963194227}
   energy: 0
   energyCap: 40
@@ -1044,8 +1070,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034208965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2873, y: -22.9, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.2873, y: 2.9, z: -100}
+  m_LocalScale: {x: 2.0006, y: 2.0006, z: 2.0006}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
