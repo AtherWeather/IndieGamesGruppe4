@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525227609991390932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 2.29, z: -0.83030707}
+  m_LocalPosition: {x: -0.03, y: 2.66, z: -0.83030707}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9218095223892741757}
@@ -88,8 +88,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 9, y: 16}
-      - {x: -9, y: 16}
+    - - {x: 9, y: 24}
+      - {x: -9, y: 24}
       - {x: 0, y: 0}
 --- !u!114 &8383209395509217040
 MonoBehaviour:
@@ -264,9 +264,11 @@ MonoBehaviour:
   zombie: {fileID: 3455413221066226007, guid: 340e654b468b97340927a81779cbe85d, type: 3}
   bullet: {fileID: 4289615758708018099, guid: e1c0233350fe5164e8558fe7ce779570, type: 3}
   rigidbody: {fileID: 9218095223892741731}
+  playercontroller: {fileID: 0}
   gunbarrel: {fileID: 1525227609991390932}
   aiming: 0
   target: {fileID: 0}
   directionVector: {x: 0, y: 0}
   guncooldown: 0
   currentcooldown: 0
+  infected: 0
