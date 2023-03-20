@@ -23,8 +23,7 @@ public class GuardAI : MonoBehaviour
 
     void Start()
     {
-        aiming = false;
-        guncooldown = 80;
+        aiming = false;       
     }
 
     void Update()

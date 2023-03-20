@@ -73,7 +73,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 6.6}
@@ -248,7 +248,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3.27
+  m_Radius: 2.46
 --- !u!114 &3240628649343135493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +269,6 @@ MonoBehaviour:
   aiming: 0
   target: {fileID: 0}
   directionVector: {x: 0, y: 0}
-  guncooldown: 0
+  guncooldown: 80
   currentcooldown: 0
   infected: 0
